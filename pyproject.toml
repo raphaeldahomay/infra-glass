@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infra-glass"
+version = "0.1.0"
+description = "A network and domain inspection tool"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.setuptools]
+py-modules = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true
