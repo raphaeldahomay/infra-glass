@@ -7,11 +7,15 @@ name = "infra-glass"
 version = "0.1.0"
 description = "A network and domain inspection tool"
 requires-python = ">=3.11"
-dependencies = []
 
-[tool.setuptools]
-py-modules = []
+[project.scripts]
+infra-glass = "infra_glass.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
-namespaces = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
