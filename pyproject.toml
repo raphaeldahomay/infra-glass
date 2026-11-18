@@ -7,6 +7,7 @@ name = "infra-glass"
 version = "0.1.0"
 description = "A network and domain inspection tool"
 requires-python = ">=3.11"
+dependencies = ["requests", "fastapi[standard]"]
 
 [project.scripts]
 infra-glass = "infra_glass.cli:main"
